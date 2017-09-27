@@ -1,11 +1,11 @@
 ﻿{
      "button":[
      {	
-          "name":"常用查询",
+          "name":"常用22",
 		  "sub_button":[
 			{
 				"type":"view",
-				"name":"报关单查询",
+				"name":"报关单查询1",
 				"url":"http://www.soso.com/"
 			},
 			{

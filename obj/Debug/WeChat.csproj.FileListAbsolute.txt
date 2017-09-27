@@ -1,0 +1,5 @@
+E:\Projects\WeChat\bin\WeChat.dll.config
+E:\Projects\WeChat\bin\WeChat.dll
+E:\Projects\WeChat\bin\WeChat.pdb
+E:\Projects\WeChat\obj\Debug\WeChat.dll
+E:\Projects\WeChat\obj\Debug\WeChat.pdb

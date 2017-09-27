@@ -19,8 +19,10 @@ namespace WeChat
         {
             if (TokenModel.token == null)
             {
+                LogHelper.Write("222");
                 TokenModel.getAccesss_Token();
             }
+            LogHelper.Write("-----------------------------------------------------------------------");
             createMenu();
         }
 
@@ -37,10 +39,12 @@ namespace WeChat
         /// </summary>
         private void createMenu()
         {
+            LogHelper.Write("54321");
             string data = getMenu();
-            string url = string.Format("https://api.weixin.qq.com/cgi-bin/menu/create?access_token={0}", TokenHelper.token.access_token);
+            LogHelper.Write(data);
+            string url = string.Format("https://api.weixin.qq.com/cgi-bin/menu/create?access_token={0}", TokenModel.token.access_token);
             WeChatHelper.loadUrl(url, data);
-            LogHelper.Write(TokenModel.token.access_token);
+           
         }
         /// <summary>
         /// 获取菜单数据
@@ -48,12 +52,22 @@ namespace WeChat
         /// <returns></returns>
         private string getMenu()
         {
-            FileStream fs1 = new FileStream(System.Web.HttpContext.Current.Server.MapPath(".") + "\\file\\menu.txt", FileMode.Open);
-            StreamReader sr = new StreamReader(fs1, Encoding.GetEncoding("GBK"));
-            string menu = sr.ReadToEnd();
-            sr.Close();
-            fs1.Close();
-            return menu;
+            try
+            {
+                LogHelper.Write("path:" + System.Web.HttpContext.Current.Server.MapPath(".") + "\\file\\menu.txt");
+                FileStream fs1 = new FileStream(System.Web.HttpContext.Current.Server.MapPath(".") + "\\file\\menu.txt", FileMode.Open);
+                StreamReader sr = new StreamReader(fs1, Encoding.GetEncoding("GBK"));
+                string menu = sr.ReadToEnd();
+                sr.Close();
+                fs1.Close();
+                return menu;
+            }
+            catch(Exception e)
+            {
+                LogHelper.Write("getMenu异常：" + e.Message);
+                return "";
+            }
+           
         }
     }
 }

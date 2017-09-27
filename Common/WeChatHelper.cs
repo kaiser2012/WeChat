@@ -23,8 +23,9 @@ namespace WeChat.Common
                 writer.Write(payload, 0, payload.Length);
                 writer.Close();
                 var result = hwr.GetResponse() as HttpWebResponse;
-                return result.StatusCode.ToString() + "_" + DateTime.Now;
+                LogHelper.Write("result:" + result.StatusCode.ToString());
 
+                return result.StatusCode.ToString() + "_" + DateTime.Now;
             }
             catch (Exception e)
             {
