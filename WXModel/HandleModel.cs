@@ -11,6 +11,10 @@ namespace WeChat.WXModel
 {
     public  class  HandleModel
     {
+        /// <summary>
+        /// 处理菜单事件
+        /// </summary>
+        /// <param name="postStr"></param>
         public static void Handle(string postStr)
         {
             string responseContent = ReturnMessage(postStr);

@@ -8,6 +8,9 @@ using WeChat.Entity;
 
 namespace WeChat.WXModel
 {
+    /// <summary>
+    /// 获取token
+    /// </summary>
     public class TokenModel
     {
         static string appid = "wxbf28a5d74131c29b";

@@ -14,7 +14,7 @@ namespace WeChat
     /// </summary>
     public class index : IHttpHandler
     {
-        bool flag = true;
+        static bool flag = true;
         public void ProcessRequest(HttpContext context)
         {
             LogHelper.Write("----------------------分割线--------------------------");
@@ -38,8 +38,8 @@ namespace WeChat
                     Byte[] postBytes = new Byte[stream.Length];
                     stream.Read(postBytes, 0, (Int32)stream.Length);
                     postString = Encoding.UTF8.GetString(postBytes);
-                    LogHelper.Write("postString：" + postString);
                     HandleModel.Handle(postString);
+                    LogHelper.Write(postString);
                 }
             }
         }

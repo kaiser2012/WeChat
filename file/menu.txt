@@ -1,14 +1,12 @@
 ﻿{
      "button":[
      {	
-          "name":"常用22",
+          "name":"常用查询",
 		  "sub_button":[
 			{
 				"type":"view",
-				"name":"报关单查询22",
-				"url":"http://1w838262n7.imwork.net",
-				"appid":"wxbf28a5d74131c29b",
-				"pagepath":"Page/Test"
+				"name":"报关单查询",
+				"url":"http://1w838262n7.imwork.net"
 			},
 			{
 				"type":"view",
@@ -22,13 +20,13 @@
 			},
 			 {
                "type":"view",
-               "name":"视频",
+               "name":"海运货物查询",
                "url":"http://v.qq.com/"
             },
 			{
-				"type":"click",
-				"name":"赞一下我们",
-				"key":"click_two"
+				"type":"view",
+				"name":"HS编码查询",
+				"key":"http://v.qq.com/"
 			}]
       },
       {
@@ -40,43 +38,14 @@
                "url":"http://www.soso.com/"
             },
             {
-               "type":"view",
-               "name":"现场报关",
-               "url":"http://223.68.174.213:8383/"
-            },
-            {
                "type":"click",
-               "name":"报关单查询",
-               "key":"V1001_GOOD"
-            },
-            {
-               "type":"click",
-               "name":"现场报检",
-               "key":"V1001_GOOD"
-            },
-            {
-               "type":"click",
-               "name":"报检单查询",
+               "name":"按钮测试",
                "key":"V1001_GOOD"
             }]
        },
       {
            "name":"我的业务",
-           "sub_button":[
-           {	
-               "type":"view",
-               "name":"详细界面",
-               "url":"http://www.soso.com/"
-            },
-            {
-               "type":"view",
-               "name":"订阅清单",
-               "url":"http://223.68.174.213:8383/"
-            },
-            {
-               "type":"click",
-               "name":"报关单调阅",
-               "key":"V1001_GOOD"
-            }]
+            "type":"view",
+            "url":"http://www.soso.com/"
        }]
  }

@@ -22,3 +22,125 @@ postString：<xml><ToUserName><![CDATA[gh_129b43fd2e41]]></ToUserName>
 result:OK-----2017/10/10 10:08:52
 ----------------------分割线-------------------------------2017/10/10 10:11:53
 result:OK-----2017/10/10 10:11:54
+----------------------分割线-------------------------------2017/10/10 14:57:35
+获取新的token-----2017/10/10 14:57:35
+result:OK-----2017/10/10 14:57:36
+----------------------分割线-------------------------------2017/10/10 14:57:57
+result:OK-----2017/10/10 14:57:57
+----------------------分割线-------------------------------2017/10/10 15:02:00
+获取新的token-----2017/10/10 15:02:00
+----------------------分割线-------------------------------2017/10/10 15:02:01
+result:OK-----2017/10/10 15:02:01
+result:OK-----2017/10/10 15:02:01
+----------------------分割线-------------------------------2017/10/10 15:06:39
+获取新的token-----2017/10/10 15:06:39
+result:OK-----2017/10/10 15:06:40
+<xml><ToUserName><![CDATA[gh_129b43fd2e41]]></ToUserName>
+<FromUserName><![CDATA[oLVv71Ma9dCp5zhoJWuAHTDKAx4A]]></FromUserName>
+<CreateTime>1507619199</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>-----2017/10/10 15:06:40
+----------------------分割线-------------------------------2017/10/10 15:06:46
+result:OK-----2017/10/10 15:06:47
+<xml><ToUserName><![CDATA[gh_129b43fd2e41]]></ToUserName>
+<FromUserName><![CDATA[oLVv71Ma9dCp5zhoJWuAHTDKAx4A]]></FromUserName>
+<CreateTime>1507619206</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>-----2017/10/10 15:06:47
+----------------------分割线-------------------------------2017/10/10 15:06:54
+result:OK-----2017/10/10 15:06:54
+<xml><ToUserName><![CDATA[gh_129b43fd2e41]]></ToUserName>
+<FromUserName><![CDATA[oLVv71Ma9dCp5zhoJWuAHTDKAx4A]]></FromUserName>
+<CreateTime>1507619214</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>-----2017/10/10 15:06:54
+----------------------分割线-------------------------------2017/10/10 15:09:30
+
+获取新的token-----2017/10/10 15:09:30
+
+result:OK-----2017/10/10 15:09:31
+
+<xml><ToUserName><![CDATA[gh_129b43fd2e41]]></ToUserName>
+<FromUserName><![CDATA[oLVv71Ma9dCp5zhoJWuAHTDKAx4A]]></FromUserName>
+<CreateTime>1507619370</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[a]]></Content>
+<MsgId>6475175889520484805</MsgId>
+</xml>-----2017/10/10 15:09:31
+
+----------------------分割线-------------------------------2017/10/10 15:11:16
+
+result:OK-----2017/10/10 15:11:17
+
+----------------------分割线-------------------------------2017/10/10 15:12:32
+
+获取新的token-----2017/10/10 15:12:32
+
+result:OK-----2017/10/10 15:12:33
+
+<xml><ToUserName><![CDATA[gh_129b43fd2e41]]></ToUserName>
+<FromUserName><![CDATA[oLVv71Ma9dCp5zhoJWuAHTDKAx4A]]></FromUserName>
+<CreateTime>1507619552</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://www.soso.com/]]></EventKey>
+<MenuId>554353372</MenuId>
+</xml>-----2017/10/10 15:12:33
+
+----------------------分割线-------------------------------2017/10/10 15:12:44
+
+<xml><ToUserName><![CDATA[gh_129b43fd2e41]]></ToUserName>
+<FromUserName><![CDATA[oLVv71Ma9dCp5zhoJWuAHTDKAx4A]]></FromUserName>
+<CreateTime>1507619564</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[l]]></Content>
+<MsgId>6475176722744140294</MsgId>
+</xml>-----2017/10/10 15:12:44
+
+----------------------分割线-------------------------------2017/10/10 15:12:55
+
+<xml><ToUserName><![CDATA[gh_129b43fd2e41]]></ToUserName>
+<FromUserName><![CDATA[oLVv71Ma9dCp5zhoJWuAHTDKAx4A]]></FromUserName>
+<CreateTime>1507619575</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[olu]]></Content>
+<MsgId>6475176769988780558</MsgId>
+</xml>-----2017/10/10 15:12:55
+
+----------------------分割线-------------------------------2017/10/10 15:13:04
+
+<xml><ToUserName><![CDATA[gh_129b43fd2e41]]></ToUserName>
+<FromUserName><![CDATA[oLVv71Ma9dCp5zhoJWuAHTDKAx4A]]></FromUserName>
+<CreateTime>1507619584</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://223.68.174.213:8383/]]></EventKey>
+<MenuId>554353372</MenuId>
+</xml>-----2017/10/10 15:13:04
+
+----------------------分割线-------------------------------2017/10/10 15:13:20
+
+<xml><ToUserName><![CDATA[gh_129b43fd2e41]]></ToUserName>
+<FromUserName><![CDATA[oLVv71Ma9dCp5zhoJWuAHTDKAx4A]]></FromUserName>
+<CreateTime>1507619600</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[CLICK]]></Event>
+<EventKey><![CDATA[click_two]]></EventKey>
+</xml>-----2017/10/10 15:13:20
+
+----------------------分割线-------------------------------2017/10/10 15:14:02
+
+<xml><ToUserName><![CDATA[gh_129b43fd2e41]]></ToUserName>
+<FromUserName><![CDATA[oLVv71Ma9dCp5zhoJWuAHTDKAx4A]]></FromUserName>
+<CreateTime>1507619642</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[CLICK]]></Event>
+<EventKey><![CDATA[V1001_GOOD]]></EventKey>
+</xml>-----2017/10/10 15:14:02
+
