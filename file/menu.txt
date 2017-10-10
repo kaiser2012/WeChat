@@ -5,8 +5,10 @@
 		  "sub_button":[
 			{
 				"type":"view",
-				"name":"报关单查询1",
-				"url":"http://www.soso.com/"
+				"name":"报关单查询22",
+				"url":"http://1w838262n7.imwork.net",
+				"appid":"wxbf28a5d74131c29b",
+				"pagepath":"Page/Test"
 			},
 			{
 				"type":"view",
@@ -18,15 +20,15 @@
 				"name":"空运货物查询",
 				"url":"http://www.soso.com/"
 			},
+			 {
+               "type":"view",
+               "name":"视频",
+               "url":"http://v.qq.com/"
+            },
 			{
-				"type":"view",
-				"name":"海运货物查询",
-				"url":"http://www.soso.com/"
-			},
-			{
-				"type":"view",
-				"name":"基础信息查询",
-				"url":"http://www.soso.com/"
+				"type":"click",
+				"name":"赞一下我们",
+				"key":"click_two"
 			}]
       },
       {

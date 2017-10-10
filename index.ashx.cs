@@ -14,16 +14,34 @@ namespace WeChat
     /// </summary>
     public class index : IHttpHandler
     {
-
+        bool flag = true;
         public void ProcessRequest(HttpContext context)
         {
+            LogHelper.Write("----------------------分割线--------------------------");
             if (TokenModel.token == null)
             {
-                LogHelper.Write("222");
+                LogHelper.Write("获取新的token");
                 TokenModel.getAccesss_Token();
             }
-            LogHelper.Write("-----------------------------------------------------------------------");
-            createMenu();
+            //Response.Write("<script>location.href='Test.html'</script>");
+            if(flag)
+            {
+                createMenu();
+                flag = false;
+            }
+            string postString = string.Empty;
+            if (HttpContext.Current.Request.HttpMethod.ToUpper() == "POST")
+            {
+                
+                using (Stream stream = HttpContext.Current.Request.InputStream)
+                {
+                    Byte[] postBytes = new Byte[stream.Length];
+                    stream.Read(postBytes, 0, (Int32)stream.Length);
+                    postString = Encoding.UTF8.GetString(postBytes);
+                    LogHelper.Write("postString：" + postString);
+                    HandleModel.Handle(postString);
+                }
+            }
         }
 
         public bool IsReusable
@@ -39,9 +57,7 @@ namespace WeChat
         /// </summary>
         private void createMenu()
         {
-            LogHelper.Write("54321");
             string data = getMenu();
-            LogHelper.Write(data);
             string url = string.Format("https://api.weixin.qq.com/cgi-bin/menu/create?access_token={0}", TokenModel.token.access_token);
             WeChatHelper.loadUrl(url, data);
            
@@ -54,7 +70,6 @@ namespace WeChat
         {
             try
             {
-                LogHelper.Write("path:" + System.Web.HttpContext.Current.Server.MapPath(".") + "\\file\\menu.txt");
                 FileStream fs1 = new FileStream(System.Web.HttpContext.Current.Server.MapPath(".") + "\\file\\menu.txt", FileMode.Open);
                 StreamReader sr = new StreamReader(fs1, Encoding.GetEncoding("GBK"));
                 string menu = sr.ReadToEnd();

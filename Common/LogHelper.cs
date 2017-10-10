@@ -14,7 +14,7 @@ namespace WeChat.Common
             FileStream fs = new FileStream(System.Web.HttpContext.Current.Server.MapPath(".") + "\\Log\\log.txt", FileMode.Append);
             StreamWriter sw = new StreamWriter(fs);
             //开始写入
-            sw.WriteLine(DateTime.Now.ToString() + "-----\r\n" + str);
+            sw.WriteLine(str + "-----" + DateTime.Now.ToString());
             //清空缓冲区
             sw.Flush();
             //关闭流

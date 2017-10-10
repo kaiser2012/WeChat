@@ -24,14 +24,14 @@ namespace WeChat.Common
                 writer.Close();
                 var result = hwr.GetResponse() as HttpWebResponse;
                 LogHelper.Write("result:" + result.StatusCode.ToString());
-
-                return result.StatusCode.ToString() + "_" + DateTime.Now;
+                return result.StatusCode.ToString();
             }
             catch (Exception e)
             {
-                LogHelper.Write(e.Message);
+                LogHelper.Write("loadUrl异常：" + e.Message);
                 return e.Message;
             }
         }
+
     }
 }
